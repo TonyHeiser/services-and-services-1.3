@@ -1,0 +1,497 @@
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url(fonts/TTLakes-Bold.eot) format('embedded-opentype'),
+      url(fonts/TTLakes-Bold.woff) format('woff'),
+      url(fonts/TTLakes-Bold.ttf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('TTLakes-Medium.eot');
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+      url(fonts/TTLakes-Medium.eot) format('embedded-opentype'),
+      url(fonts/TTLakes-Medium.woff) format('woff'),
+      url(fonts/TTLakes-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url(fonts/TTLakes-Regular.eot) format('embedded-opentype'),
+      url(fonts/TTLakes-Regular.woff) format('woff'),
+      url(fonts/TTLakes-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  height: 88px;
+}
+
+.divider {
+  border: 1px solid #eaeaea;
+  height: 32px;
+}
+
+.container-header {
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 17px;
+}
+
+.container-header1 {
+  padding-left: 24px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-header2 {
+  padding-right: 17px;
+  width: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* MAIN */
+
+.main {
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+h1.services {
+  font-family: "TT Lakes Bold";
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.title {
+  padding-top: 25px;
+  width: 256px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit {
+  display: none;
+}
+
+.repair-status{
+  display: none;
+}
+
+/* Slide-menu */
+
+.slidemenu {
+  margin-left: 33px;
+  margin-top: 32px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  column-gap: 26px;
+}
+
+.slidemenu::-webkit-scrollbar {
+  display: none;
+}
+
+.slidemenu__button {
+  background-color: #eaeaea;
+  border: none;
+  height: 40px;
+}
+
+.slidemenu__button p {
+  text-align: center;
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  
+}
+
+.slidemenu__button:focus {
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+.slidemenu__button p:focus {
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 20px; 
+}
+
+/* .slidemenu__button:active {
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+}
+
+.slidemenu__button:hover {
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+} */
+
+/* Description */
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.description__text {
+  font-family: TT Lakes Regular;
+  margin-top: 32px;
+  margin-left: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  /* width: 312px; */
+}
+
+p.description__text.two {
+  margin-top: 20px;
+  overflow: hidden;
+  height: 36px;
+}
+
+.read-more {
+  margin-top: -21px;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  width: 144px;
+}
+
+p.read-more__text {
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+
+}
+
+.CPS-img {
+  margin-top: 32px;
+  margin-right: 26px;
+}
+
+.img-320, .img-1120 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .container-header1 {
+    padding-left: 15px;
+  }
+
+  .CPS-logo {
+    padding-left: 16px;
+  }
+
+  .container-header2 {
+    padding-right: 6px;
+  }
+
+  .repair {
+    margin-right: -10px;
+  }
+
+  img.chat, .call, .account {
+    display: none;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .description-container {
+    align-self: self-start;
+  }
+
+  .one {
+    display: none;
+  }
+
+  p.two {
+    display: none;
+  }
+
+  p.description__text {
+    margin-right: 25px;
+    /* margin-top: -20px; */
+    /* width: 288px; */
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  h1.services {
+    padding-right: 9px;
+  }
+
+  .slidemenu {
+    margin-left: 26px;
+    margin-top: 23px;
+    margin-bottom: -7px;
+  }
+
+  .CPS-img img{
+    margin-top: -34px;
+    margin-right: 0;
+    margin-left: 22px;
+    width: 320px;
+  }
+
+  .img-320 {
+    display: block;
+  }
+
+  .img-768, .img-1120 {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+
+  .container-header {
+    display: none;
+  }
+
+  .fake-header {
+    /* margin-top: 20px; */
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+
+  .title {
+    width: 264px;
+  }
+
+  .fake-header__features {
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 372px;
+    margin-right: 32px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: space-between;
+    width: 173px;
+  }
+
+  .repair-status {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+  }
+
+  p.submit__text, p.repair__text{
+    margin-right: 8px;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px; 
+  }
+
+  .slidemenu {
+    /* width: 1000px; */
+    margin-top: 12px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    overflow: visible;
+    margin-top: 0px;
+  }
+
+  .slidemenu__button.seven {
+    display: none;
+  }
+
+  .description {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 36px;
+  }
+
+  .description-container {
+    align-self: self-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  p.description__text.two {
+    overflow: visible;
+  }
+
+  .read-more {
+    margin-top: 40px;
+    margin-left: 18px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 144px; */
+  }
+
+  .img-1120 {
+    display: block;
+  }
+
+  .img-320, .img-768 {
+    display: none;
+  }
+
+/* 
+  .container-header {
+    display: none;
+  }
+
+  /* .title {
+    margin-top: 18px;
+    gap: 20px;
+  } */
+
+  /* h1.services {
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  .submit {
+    display: flex;
+    align-items: center;
+    padding-right: 15px; 
+    width: 190px;
+  } */
+  
+  /* p.submit__text, p.repair__text{
+    margin-right: 8px;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px; 
+  } */
+  
+  /* .repair-status{
+    display: flex;
+    align-items: center;
+    width: 190px;
+  } */
+
+  /* .fake-header {
+    margin-top: 20px;
+    display: flex; 
+    height: 60px;
+    justify-content: space-between;
+  } */
+
+  /* .fake-header__features { */
+    /* margin-top: 62px; */
+    /* display: flex;
+    justify-content: space-between;
+  } */
+
+  /* .slidemenu {
+    margin-left: 48px;
+    margin-top: 31px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    /* white-space: nowrap; */
+    /* gap: 22px; */
+  /* } */
+
+  /* .slidemenu__button p {
+    text-align: center;
+  } */
+
+  /* .slidemenu__button .seven {
+    display: none;
+  } */
+
+  /* .description-container {
+    margin-top: ;
+  } */
+
+  /* p.description__text {
+    margin-left: 35px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    width: 490px;
+  } */
+/* 
+  p.description__text.two {
+    margin-top: 20px;
+    height: 80px;
+  }
+
+  .read-more {
+    margin-top: -16px;
+    margin-left: 26px;
+  }
+
+  .CPS-img {
+    margin-top: 48px;
+    margin-right: 27px;
+  }
+
+  .img-320, .img-768 {
+    display: none;
+  }
+
+  .img-1120 {
+    display: block;
+  } */
+}
