@@ -299,7 +299,6 @@ p.read-more__text {
   }
 
   .fake-header {
-    /* margin-top: 20px; */
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -341,7 +340,6 @@ p.read-more__text {
   }
 
   .slidemenu {
-    /* width: 1000px; */
     margin-top: 12px;
     margin-left: 50px;
     flex-wrap: wrap;
@@ -373,11 +371,6 @@ p.read-more__text {
   .read-more {
     margin-top: 40px;
     margin-left: 18px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-    width: 144px; */
   }
 
   .img-1120 {
